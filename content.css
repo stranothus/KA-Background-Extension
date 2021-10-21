@@ -1,0 +1,119 @@
+._o77ufew, ._19lfck2n {
+    color : #EFEFEF;
+}
+
+
+.user-info {
+    background-image : url("https://cdn.kastatic.org/images/profile/backgrounds/bg-photon-2.jpg");
+    background-attachment : fixed;
+    background-size : 100%;
+    background-position : 0 -50px;
+}
+
+
+@keyframes demDeets {
+    from {
+        backdrop-filter : blur(0) brightness(100%);
+        -webkit-backdrop-filter : blur(0) brightness(100%);
+    }
+    to {
+        backdrop-filter : blur(3px) brightness(175%);
+        -webkit-backdrop-filter : blur(3px) brightness(175%);
+    }
+}
+@keyframes notDemDeets {
+    from {
+        backdrop-filter : blur(3px) brightness(175%);
+        -webkit-backdrop-filter : blur(3px) brightness(175%);
+    }
+    to {
+        backdrop-filter : blur(0) brightness(100%);
+        -webkit-backdrop-filter : blur(0) brightness(100%);
+    }
+}
+
+
+.avatar-pic-container:hover {
+    background : none !important;
+    backdrop-filter : blur(8px) brightness(250%);
+    -webkit-backdrop-filter : blur(8px) brightness(250%);
+    animation : 0.2s demDeets forwards;
+}
+.avatar-pic-container:not(:hover) {
+    background : none !important;
+    backdrop-filter : blur(0) brightness(100%);
+    -webkit-backdrop-filter : blur(0) brightness(100%);
+    animation : 0.2s notDemDeets forwards;
+}
+
+
+.user-deets:hover {
+    background : none !important;
+    backdrop-filter : blur(8px) brightness(250%);
+    -webkit-backdrop-filter : blur(8px) brightness(250%);
+    animation : 0.2s demDeets forwards;
+}
+.user-deets:not(:hover) {
+    background : none !important;
+    backdrop-filter : blur(0) brightness(100%);
+    -webkit-backdrop-filter : blur(0) brightness(100%);
+    animation : 0.2s notDemDeets forwards;
+}
+
+
+._pot4j9l {
+    backdrop-filter : blur(8px) brightness(250%);
+    -webkit-backdrop-filter : blur(8px) brightness(250%);
+}
+
+
+@keyframes editHover {
+    from {
+        background : none !important;
+        border-width : 0px !important;
+        box-shadow : 0px 0px 0px #303030;
+        backdrop-filter : blur(8px) brightness(250%);
+        -webkit-backdrop-filter : blur(8px) brightness(250%);
+    }
+    to {
+        background : none !important;
+        border-width : 0px !important;
+        box-shadow : 2px 3px 3px #303030;
+        backdrop-filter : blur(8px) brightness(300%);
+        -webkit-backdrop-filter : blur(8px) brightness(300%);
+    }
+}
+
+
+._4f6nmsc:hover {
+    background : none !important;
+    border-width : 0px !important;
+    box-shadow : 2px 3px 3px #303030;
+    backdrop-filter : blur(8px) brightness(300%);
+    -webkit-backdrop-filter : blur(8px) brightness(300%);
+    animation : 0.1s editHover forwards;
+}
+._lrhkzqu:focus {
+    background : none !important;
+    border-width : 0px !important;
+    box-shadow : 2px 3px 3px #303030;
+    backdrop-filter : blur(8px) brightness(300%);
+    -webkit-backdrop-filter : blur(8px) brightness(300%);
+    animation : 0.1s editHover forwards;
+}
+
+
+.user-summary-view__points-and-badges {
+    backdrop-filter : blur(8px) brightness(250%);
+    -webkit-backdrop-filter : blur(8px) brightness(250%);
+    padding : 4px;
+    border-radius : 7px;
+}
+
+
+.profile-badge-count-container {
+    color : #303030 !important;
+}.profile-badge-count-container:hover {
+    background : none !important;
+    color : #303030 !important;
+}
